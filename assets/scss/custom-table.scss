@@ -1,0 +1,46 @@
+.p-datatable-thead {
+    background-color: #5e8f32;
+}
+
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-custom th,
+.table-custom td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.table-custom td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.table-custom thead th {
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #e5e7eb;
+    font-weight: 600;
+    color: #374151;
+    background: #f9fafb;
+    transition: box-shadow 0.2s;
+}
+
+.table-custom tbody+tbody {
+    border-top: 2px solid #dee2e6;
+}

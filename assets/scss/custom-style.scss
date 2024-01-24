@@ -1,0 +1,93 @@
+@import 'primeflex/primeflex.scss';
+
+.module-title {
+    @include styleclass('font-semibold text-xl md:text-2xl text-blue-800');
+}
+
+.module-menu-h {
+    @include styleclass('text-800 hover:text-blue-800 hover:font-semibold');
+}
+
+.module-menu-v ol a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    color: var(--surface-900);
+    border-radius: var(--border-radius);
+    transition: box-shadow .2s;
+}
+
+.module-menu-v a.router-link-active,
+.module-menu-v a.router-link-active:hover {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+}
+
+.btn-active {
+    @include styleclass('text-800 hover:text-indigo-400 hover:font-semibold');
+}
+
+
+.link-active {
+    background-color: #ebedf4;
+    border-bottom: 1px solid #d3e3fd;
+    border-top: 1px solid #d3e3fd;
+    color: #1d4ed8 !important;
+}
+
+
+.custom-dropdown .p-dropdown-trigger {
+    display: none !important;
+    cursor: auto !important;
+}
+
+.input-center .p-inputnumber-input {
+    text-align: center !important;
+}
+
+.custom-input {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    outline: none !important;
+    text-align: center;
+}
+
+.custom-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.custom-tooltip {
+    max-width: 550px;
+}
+
+
+.bg-auth-page {
+    background-image: url('../images/bg-login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.-rotate-25 {
+    transform: rotate(-20deg);
+}
+
+.rotate-30 {
+    transform: rotate(30deg);
+}
+
+.text-groupheader{
+    max-width: 60vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
